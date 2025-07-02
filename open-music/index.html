@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <h1 class="header__logo">
+        <span class="header__logo-letter">o</span>pen
+        <span class="header__logo-letter">m</span>usica
+      </h1>
+
+      <button
+        type="button"
+        aria-label="Alternar modo escuro"
+        class="header__button header__button--dark"
+      >
+        <img
+          src="./src/assets/icons/moon-icon.svg"
+          alt="ícone lua"
+          class="header__icon"
+        />
+      </button>
+    </header>
+
+    <main class="main">
+      <!-- SEÇÃO DE FILTRO POR GENERO -->
+      <section class="filter filter--genre" aria-labelledby="filtro-genero">
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <h2 id="filtro-genero" class="filter__title">Gênero Musical</h2>
+
+        <ul class="filter__list">
+          <li class="filter__item">
+            <button type="button" class="filter__button">Todos</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Pop</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">MPB</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Forró</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Samba</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Baião</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Rap</button>
+          </li>
+
+          <li class="filter__item">
+            <button type="button" class="filter__button">Hip-Hop</button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+      <section class="filter filter--price" aria-labelledby="filtro-preco">
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <div class="filter__container">
+          <h2 class="filter__title" id="filtro-preco">Definir Preço</h2>
+
+          <label for="price" class="filter__label"
+            >Até <span class="filter__currency">R$</span
+            ><span id="valor-preco" class="filter__value"> 100</span></label
+          >
+        </div>
+
+        <input
+          type="range"
+          name="preco"
+          id="price"
+          min="0"
+          max="400"
+          step="10"
+          value="100"
+          class="filter__range"
+        />
+      </section>
+
+      <!-- SEÇÃO DE ALBUNS -->
+      <section class="album" aria-labelledby="lista-albuns">
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+        <h2 id="lista-albuns" class="album__title">Álbuns Encontrados</h2>
+        <ul class="album__list">
+          <!-- Album 1 -->
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-1.png"
+              alt="Capa do album acabou o chorare"
+            />
+            <h3 class="album__name">Acabou o Chorare</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Novos Bainos</p>
+              <p class="album__genre">MPB</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$137,91</p>
+              <button type="button" class="album__buy-button">Comprar</button>
+            </div>
+          </li>
+
+          <!-- Album 2 -->
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-2.png"
+              alt="Capa do album the wall"
+            />
+            <h3 class="album__name">The Wall</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Pink Floyd</p>
+              <p class="album__genre">Rock</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$123,56</p>
+              <button class="album__buy-button" type="button">Comprar</button>
+            </div>
+          </li>
+
+          <!-- Album 3 -->
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-3.png"
+              alt="Capa do album to pimp a butterfly"
+            />
+            <h3 class="album__name">To Pimp a Butterfly</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Kendrick Lamar</p>
+              <p class="album__genre">Rap</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$102,66</p>
+              <button type="button" class="album__buy-button">Comprar</button>
+            </div>
+          </li>
+
+          <!-- Album 4 -->
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-4.png"
+              alt="Capa do album the wall"
+            />
+            <h3 class="album__name">The Wall</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Pink Floyd</p>
+              <p class="album__genre">Rock</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$123,56</p>
+              <button type="button" class="album__buy-button">Comprar</button>
+            </div>
+          </li>
+
+          <!-- Album 5 -->
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-5.png"
+              alt="Capa do album acabou o chorare"
+            />
+            <h3 class="album__name">Acabou o Chorare</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Novos Bainos</p>
+              <p class="album__genre">MPB</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$137,91</p>
+              <button type="button" class="album__buy-button">Comprar</button>
+            </div>
+          </li>
+
+          <!-- Album 6 -->
+
+          <li class="album__item">
+            <img
+              class="album__cover"
+              src="./src/assets/imgs/cover-6.png"
+              alt="Capa do album to pimp a butterfly"
+            />
+            <h3 class="album__name">To Pimp a Butterfly</h3>
+
+            <div class="album__info">
+              <p class="album__artist">Kendrick Lamar</p>
+              <p class="album__genre">Rap</p>
+            </div>
+
+            <div class="album__purchase">
+              <p class="album__price">R$102,66</p>
+              <button type="button" class="album__buy-button">Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
