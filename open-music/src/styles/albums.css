@@ -1,0 +1,77 @@
+.album {
+  padding: 2rem 0;
+}
+
+.album__title {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.album__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-size-2);
+}
+
+.album__item {
+  background-color: var(--color-gray-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size-1);
+  flex-basis: 308px;
+  flex-shrink: 1;
+  border-radius: 4px;
+}
+
+.album__cover {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.album__name {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  margin: 0 16px;
+}
+
+.album__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+  font-size: var(--font-size-4);
+}
+
+.album__purchase {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+  padding: 16px 0;
+  align-items: center;
+}
+
+.album__price {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+}
+
+.album__buy-button {
+  background-color: var(--color-brand-2);
+  color: #fff;
+  font-weight: 500;
+  font-size: var(--font-size-4);
+  border-radius: 4px;
+  border: solid 1px var(--color-brand-2);
+  padding: 7px 5px;
+  cursor: pointer;
+}
+
+.album__item:hover {
+  background-color: var(--color-gray-5);
+}
+
+.album__buy-button:hover {
+  background-color: var(--color-brand-1);
+  font-weight: 600;
+}

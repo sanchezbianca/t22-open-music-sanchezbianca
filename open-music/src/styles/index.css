@@ -1,3 +1,6 @@
 @import "./reset.css";
 @import "./globalStyles.css";
 @import "./header.css";
+@import "./genres.css";
+@import "./price-range.css";
+@import "./albums.css";

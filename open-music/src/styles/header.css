@@ -6,6 +6,9 @@
   font-weight: 600;
   padding-bottom: 3rem;
   border-bottom: solid 3px var(--color-brand-2);
+  position: sticky;
+  top: 0;
+  background-color: var(--color-gray-8);
 }
 
 .header__logo-letter {

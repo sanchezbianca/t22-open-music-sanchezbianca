@@ -1,0 +1,36 @@
+.filter {
+  padding: 2rem 0;
+}
+
+.filter--genre {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size-1);
+}
+
+.filter__title {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.filter__list {
+  display: flex;
+  gap: var(--gap-size-2);
+}
+
+.filter__button {
+  background-color: var(--color-gray-6);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.filter__radio {
+  display: none;
+}
+
+.filter__radio:checked + .filter__button {
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-7);
+}
